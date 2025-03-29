@@ -79,7 +79,7 @@ public class CartService {
         /* TODO::
         *   need to check the stock of product in cart so retry mechanism to
         * check stock in inventory
-        * Then cirvuit breaker and feign to hit place order of order service */
+        * Then circuit breaker and feign to hit place order of order service */
         if(checkCartStock(cart)){
             System.out.println("Checkout completed for User ID: " + userId);
             placeOrder(cart);
